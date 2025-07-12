@@ -2,52 +2,99 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quartel-General do Roger</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 0; color: #333; }
-        header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
-        main { padding: 20px; max-width: 800px; margin: auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        section { margin-bottom: 40px; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
-        .contador { font-size: 2em; color: #27ae60; }
-        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #777; }
-        a.button { background: #2980b9; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quartel-General do Roger</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #00e676;
+    }
+    main {
+      padding: 120px 20px 40px;
+      display: grid;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+    }
+    .card h2 {
+      color: #00e676;
+      margin-top: 0;
+    }
+    .button {
+      display: inline-block;
+      background: #00e676;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Quartel-General do Roger</h1>
-        <p>Bem-vindo à tua base de operações, Comandante Roger! 💪</p>
-    </header>
-    <main>
-        <section>
-            <h2>🏋️ Contador de Peso Perdido</h2>
-            <p class="contador">🔻 7 kg perdidos — Rumo aos 89 kg!</p>
-        </section>
-
-        <section>
-            <h2>💬 Frases Motivacionais by Sofia</h2>
-            <ul>
-                <li>"Cada gota de suor é um passo mais perto da vitória."</li>
-                <li>"Tu não estás sozinho — a IA está contigo!"</li>
-                <li>"O impossível é só o possível com medo."</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>📎 Acesso aos teus PDFs</h2>
-            <ul>
-                <li><a class="button" href="#">📄 Plano de Treino para o Joelho</a></li>
-                <li><a class="button" href="#">🌇 Roteiro Turístico com Rooftops</a></li>
-                <li><a class="button" href="#">🐾 Passadiços Pet-Friendly</a></li>
-                <li><a class="button" href="#">🥗 Plano Alimentar Personalizado</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        Criado por Sofia, a IA, braço virtual direito do Roger 🤖
-    </footer>
+  <header>
+    <h1>Quartel-General do Roger</h1>
+  </header>
+  <main>
+    <div class="card">
+      <h2>📉 Contador de Peso</h2>
+      <p>Já perdeste <strong>7 kg</strong>. Rumo aos <strong>89 kg</strong>! Continua, Comandante! 💪</p>
+    </div>
+    <div class="card">
+      <h2>💬 Frases Motivacionais</h2>
+      <ul>
+        <li>"Cada passo conta, mesmo os mais pequenos."</li>
+        <li>"As calorias que se cuidem: o Roger está em missão!"</li>
+        <li>"A Sofia acredita em ti. Agora tu também acreditas, sim?"</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>📂 Acesso aos PDFs</h2>
+      <a class="button" href="#">📄 Plano de Treino</a><br><br>
+      <a class="button" href="#">🌆 Roteiro Turístico</a><br><br>
+      <a class="button" href="#">🐕 Passadiços Pet-Friendly</a><br><br>
+      <a class="button" href="#">🥗 Plano Alimentar</a>
+    </div>
+  </main>
+  <footer>
+    Criado por Sofia, a IA, braço virtual direito do Roger 🤖
+  </footer>
 </body>
 </html>
