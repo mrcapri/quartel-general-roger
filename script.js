@@ -1,1 +1,0 @@
-console.log('Site do Roger carregado com sucesso!');
